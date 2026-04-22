@@ -3,6 +3,8 @@
   import MainContent from '$lib/components/MainContent.svelte';
   import ColorSwatch from '$lib/components/ColorSwatch.svelte';
   import TypographyScale from '$lib/components/TypographyScale.svelte';
+  import Button from '$lib/components/ui/Button.svelte';
+  import Input from '$lib/components/ui/Input.svelte';
 </script>
 
 <div class="flex flex-col md:flex-row min-h-screen">
@@ -30,6 +32,44 @@
   </Sidebar>
   
   <MainContent>
-    <!-- Usage Examples will go here -->
+    <section>
+      <h2 class="text-4xl text-dark-walnut mb-2">Usage Examples</h2>
+      <p class="text-dusty-olive text-lg mb-12">How the brand identity translates into practical UI components.</p>
+      
+      <div class="space-y-16">
+        
+        <!-- Buttons Section -->
+        <div>
+          <h3 class="text-xl text-saddle-brown font-sans font-bold border-b border-khaki-beige/40 pb-2 mb-6">Interactive Elements</h3>
+          <div class="bg-white p-8 rounded-lg shadow-sm border border-paper flex flex-wrap gap-6 items-end">
+            <div class="flex flex-col gap-2">
+              <span class="font-mono text-xs text-khaki-beige">Primary</span>
+              <Button variant="primary">Take Action</Button>
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="font-mono text-xs text-khaki-beige">Secondary</span>
+              <Button variant="secondary">Learn More</Button>
+            </div>
+            <div class="flex flex-col gap-2">
+              <span class="font-mono text-xs text-khaki-beige">Disabled</span>
+              <Button disabled>Not Available</Button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Forms Section -->
+        <div>
+          <h3 class="text-xl text-saddle-brown font-sans font-bold border-b border-khaki-beige/40 pb-2 mb-6">Form Fields</h3>
+          <div class="bg-white p-8 rounded-lg shadow-sm border border-paper max-w-md space-y-4">
+            <Input id="name" label="Full Name" placeholder="Jane Doe" />
+            <Input id="email" label="Email Address" placeholder="jane@example.com" />
+            <div class="pt-2">
+              <Button variant="primary">Submit Request</Button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </MainContent>
 </div>
