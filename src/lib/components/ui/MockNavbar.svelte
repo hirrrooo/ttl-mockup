@@ -4,8 +4,9 @@
     <span class="font-sans font-bold text-dark-walnut hidden sm:inline">Take The Lead</span>
   </div>
   <nav class="hidden md:flex gap-6 font-sans text-sm font-semibold text-charcoal-brown">
-    <a href="#" class="hover:text-saddle-brown">About</a>
-    <a href="#" class="hover:text-saddle-brown">Services</a>
+    <a href="#" class="hover:text-saddle-brown">Fundraisers</a>
+    <a href="#" class="hover:text-saddle-brown">Start a Campaign</a>
+    <a href="#" class="hover:text-saddle-brown">Guides</a>
     <a href="#" class="text-saddle-brown border-b-2 border-saddle-brown pb-1">Contact</a>
   </nav>
   <button class="bg-saddle-brown text-white px-4 py-1.5 rounded text-sm font-sans font-bold hover:bg-dark-walnut transition-colors">

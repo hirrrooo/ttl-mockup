@@ -75,11 +75,11 @@
         <div>
           <h3 class="text-xl text-saddle-brown font-sans font-bold border-b border-khaki-beige/40 pb-2 mb-6">Content Cards</h3>
           <div class="bg-paper/50 p-8 rounded-lg border border-khaki-beige/20 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card title="Training Basics">
-              Establishing a strong foundation of trust and respect with your dog begins with consistent positive reinforcement.
+            <Card title="Help Buster Walk Again">
+              Buster is a 4-year-old Golden Retriever who needs emergency spinal surgery after an accident. Help us cover his medical bills.
             </Card>
-            <Card title="Nutrition Guide">
-              Understanding what fuels your dog's energy and maintains their health is crucial for a long, happy life together.
+            <Card title="Emergency Surgery for Luna">
+              Luna swallowed a toy and needs immediate surgery to remove the blockage. Any contribution helps our little fighter.
             </Card>
           </div>
         </div>
