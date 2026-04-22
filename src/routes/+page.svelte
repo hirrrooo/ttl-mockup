@@ -82,18 +82,20 @@
         <!-- Forms -->
         <div id="forms-section">
           <h3 class="text-xl text-saddle-brown font-sans font-bold border-b border-khaki-beige/40 pb-2 mb-6">Donation Form</h3>
-          <div class="bg-white p-8 rounded-lg shadow-sm border border-paper max-w-md space-y-6">
+          <div class="bg-white p-8 rounded-lg shadow-sm border border-paper grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
             <div class="space-y-4">
                <Input id="name" label="Full Name" placeholder="Jane Doe" />
                <Input id="email" label="Email Address" placeholder="jane@example.com" />
             </div>
             
-            <div class="pt-2 border-t border-khaki-beige/20 mt-4">
-               <Slider label="Donation Amount" bind:value={donationAmount} min={10} max={1000} step={10} />
-            </div>
+            <div class="space-y-6">
+              <div class="pt-2">
+                 <Slider label="Donation Amount" bind:value={donationAmount} min={10} max={1000} step={10} />
+              </div>
 
-            <div class="pt-4">
-              <Button variant="primary" class="w-full">Donate ${donationAmount}</Button>
+              <div class="pt-4">
+                <Button variant="primary" class="w-full">Donate ${donationAmount}</Button>
+              </div>
             </div>
           </div>
         </div>
