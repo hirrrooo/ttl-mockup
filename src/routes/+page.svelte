@@ -5,6 +5,9 @@
   import Input from '$lib/components/ui/Input.svelte';
   import Card from '$lib/components/ui/Card.svelte';
   import MockNavbar from '$lib/components/ui/MockNavbar.svelte';
+  import Slider from '$lib/components/ui/Slider.svelte';
+  
+  let donationAmount = $state(50);
 </script>
 
 <div class="min-h-screen bg-parchment pb-24">
@@ -76,14 +79,21 @@
           </div>
         </div>
 
-        <!-- Forms (Placeholder for next task) -->
+        <!-- Forms -->
         <div id="forms-section">
           <h3 class="text-xl text-saddle-brown font-sans font-bold border-b border-khaki-beige/40 pb-2 mb-6">Donation Form</h3>
-          <div class="bg-white p-8 rounded-lg shadow-sm border border-paper max-w-md space-y-4">
-            <Input id="name" label="Full Name" placeholder="Jane Doe" />
-            <Input id="email" label="Email Address" placeholder="jane@example.com" />
-            <div class="pt-2">
-              <Button variant="primary">Donate</Button>
+          <div class="bg-white p-8 rounded-lg shadow-sm border border-paper max-w-md space-y-6">
+            <div class="space-y-4">
+               <Input id="name" label="Full Name" placeholder="Jane Doe" />
+               <Input id="email" label="Email Address" placeholder="jane@example.com" />
+            </div>
+            
+            <div class="pt-2 border-t border-khaki-beige/20 mt-4">
+               <Slider label="Donation Amount" bind:value={donationAmount} min={10} max={1000} step={10} />
+            </div>
+
+            <div class="pt-4">
+              <Button variant="primary" class="w-full">Donate ${donationAmount}</Button>
             </div>
           </div>
         </div>
