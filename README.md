@@ -1,42 +1,32 @@
-# sv
+# Take The Lead - Brand Guidelines
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This project is a static SvelteKit single-page application built to showcase the brand identity and UI components for **Take The Lead**, a mockup pet fundraising platform. 
 
-## Creating a project
+It is designed with a responsive, modern "stacked vertical flow" layout and includes print optimizations to naturally support high-fidelity PDF exports via native browser printing.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Overview
 
-```sh
-# create a new project
-npx sv create my-app
-```
+The brand board includes:
+- **Core Identity**: Custom "Earthy" color palette (Tailwind configured) and Typography scales using Google Fonts (Quicksand, Roboto Slab, Roboto Mono).
+- **UI Components**: Reusable `Button`, `Input`, `Slider`, `Card`, and `MockNavbar` components.
+- **Donation Form**: A sample interactive fundraising component showcasing Svelte 5 `$state` and `$bindable` runes.
 
-To recreate this project with the same configuration:
+## Development
 
-```sh
-# recreate this project
-npx sv@0.15.1 create --template minimal --types ts --no-install .
-```
+To start a local development server:
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+```bash
+npm install
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+## Deployment (GitHub Pages)
 
-To create a production version of your app:
+This project is configured to automatically deploy to GitHub Pages using **GitHub Actions**.
 
-```sh
-npm run build
-```
+Whenever you push to the `main` branch, the `.github/workflows/deploy.yml` workflow will automatically:
+1. Build the application using `@sveltejs/adapter-static`.
+2. Map the base paths correctly.
+3. Deploy the resulting static files to the `gh-pages` environment.
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+*Note: Ensure that GitHub Pages is enabled in your repository settings and set to source from "GitHub Actions".*
