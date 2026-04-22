@@ -1,15 +1,20 @@
 <script lang="ts">
+  import type { HTMLButtonAttributes } from 'svelte/elements';
   import type { Snippet } from 'svelte';
   
+  interface Props extends HTMLButtonAttributes {
+    variant?: 'primary' | 'secondary';
+    children?: Snippet;
+  }
+
   let { 
     variant = 'primary', 
     disabled = false,
-    children
-  }: {
-    variant?: 'primary' | 'secondary';
-    disabled?: boolean;
-    children?: Snippet;
-  } = $props();
+    type = 'button',
+    class: className = '',
+    children,
+    ...rest
+  }: Props = $props();
   
   const baseClasses = "px-6 py-2.5 rounded font-sans font-bold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-parchment shadow-sm active:shadow-none active:translate-y-px";
   
@@ -22,8 +27,10 @@
 </script>
 
 <button 
-  class="{baseClasses} {disabled ? disabledClasses : variants[variant]}"
+  {type}
+  class="{baseClasses} {disabled ? disabledClasses : variants[variant]} {className}"
   {disabled}
+  {...rest}
 >
   {@render children?.()}
 </button>
