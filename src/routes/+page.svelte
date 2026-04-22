@@ -5,6 +5,8 @@
   import TypographyScale from '$lib/components/TypographyScale.svelte';
   import Button from '$lib/components/ui/Button.svelte';
   import Input from '$lib/components/ui/Input.svelte';
+  import Card from '$lib/components/ui/Card.svelte';
+  import MockNavbar from '$lib/components/ui/MockNavbar.svelte';
 </script>
 
 <div class="flex flex-col md:flex-row min-h-screen">
@@ -66,6 +68,32 @@
             <div class="pt-2">
               <Button variant="primary">Submit Request</Button>
             </div>
+          </div>
+        </div>
+
+        <!-- Cards Section -->
+        <div>
+          <h3 class="text-xl text-saddle-brown font-sans font-bold border-b border-khaki-beige/40 pb-2 mb-6">Content Cards</h3>
+          <div class="bg-paper/50 p-8 rounded-lg border border-khaki-beige/20 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card title="Training Basics">
+              Establishing a strong foundation of trust and respect with your dog begins with consistent positive reinforcement.
+            </Card>
+            <Card title="Nutrition Guide">
+              Understanding what fuels your dog's energy and maintains their health is crucial for a long, happy life together.
+            </Card>
+          </div>
+        </div>
+
+        <!-- Navigation Section -->
+        <div>
+          <h3 class="text-xl text-saddle-brown font-sans font-bold border-b border-khaki-beige/40 pb-2 mb-6">Page Navigation</h3>
+          <div class="bg-paper/30 p-8 rounded-lg border border-khaki-beige/20 relative shadow-inner">
+             <div class="shadow-lg rounded-lg overflow-hidden border border-black/5">
+                <MockNavbar />
+                <div class="bg-parchment h-32 p-6 flex items-center justify-center text-khaki-beige font-sans italic">
+                   Page Content Area
+                </div>
+             </div>
           </div>
         </div>
 
