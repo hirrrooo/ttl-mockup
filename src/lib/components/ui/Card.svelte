@@ -13,8 +13,8 @@
     <p class="text-sm text-charcoal-brown/80 mb-4 line-clamp-3">
       {@render children?.()}
     </p>
-    <button class="font-sans font-semibold text-saddle-brown text-sm hover:text-dark-walnut flex items-center gap-1">
+    <a href="#" class="font-sans font-semibold text-saddle-brown text-sm hover:text-dark-walnut flex items-center gap-1">
       Read Article &rarr;
-    </button>
+    </a>>
   </div>
 </div>
