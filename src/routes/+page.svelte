@@ -6,6 +6,7 @@
   import Card from '$lib/components/ui/Card.svelte';
   import MockNavbar from '$lib/components/ui/MockNavbar.svelte';
   import Slider from '$lib/components/ui/Slider.svelte';
+  import { base } from '$app/paths';
   
   let donationAmount = $state(50);
 </script>
@@ -15,7 +16,7 @@
   <!-- Header / Hero -->
   <header class="bg-paper py-16 border-b border-khaki-beige/30 mb-16 px-6 text-center">
     <div class="max-w-4xl mx-auto flex flex-col items-center gap-6">
-      <img src="/logo.png" alt="Take The Lead Logo" class="h-24 w-auto drop-shadow-md" />
+      <img src="{base}/logo.png" alt="Take The Lead Logo" class="h-24 w-auto drop-shadow-md" />
       <div>
         <h1 class="text-3xl md:text-4xl font-sans font-bold text-dark-walnut tracking-widest uppercase mb-2">Brand Guidelines</h1>
         <p class="text-dusty-olive font-mono text-sm uppercase tracking-widest">Take The Lead - Pet Fundraising</p>

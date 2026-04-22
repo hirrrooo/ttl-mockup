@@ -1,6 +1,10 @@
+<script lang="ts">
+  import { base } from '$app/paths';
+</script>
+
 <div class="bg-white border-b border-paper px-6 py-4 flex items-center justify-between rounded-t-lg">
   <div class="flex items-center gap-2">
-    <img src="/logo.png" alt="Take The Lead Home" class="h-8 w-auto" />
+    <img src="{base}/logo.png" alt="Take The Lead Home" class="h-8 w-auto" />
     <span class="font-sans font-bold text-dark-walnut hidden sm:inline">Take The Lead</span>
   </div>
   <nav class="hidden md:flex gap-6 font-sans text-sm font-semibold text-charcoal-brown">
