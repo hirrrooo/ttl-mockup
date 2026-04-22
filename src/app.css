@@ -1,12 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto+Mono:wght@100..700&family=Roboto+Slab:wght@100..900&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply bg-parchment text-charcoal_brown font-serif;
+    @apply bg-parchment text-charcoal-brown font-serif;
   }
   
   h1, h2, h3, h4, h5, h6 {
