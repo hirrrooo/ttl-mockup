@@ -8,7 +8,7 @@
   
   let { 
     label = '', 
-    id = Math.random().toString(36).slice(2),
+    id = '',
     value = $bindable(50),
     min = 5,
     max = 500,
@@ -20,13 +20,13 @@
 <div class="flex flex-col gap-2">
   {#if label}
     <div class="flex justify-between items-end">
-      <label for={id} class="font-sans font-semibold text-sm text-saddle-brown">{label}</label>
+      <label for={id || 'amount-slider'} class="font-sans font-semibold text-sm text-saddle-brown">{label}</label>
       <span class="font-sans font-bold text-dark-walnut text-lg">${value}</span>
     </div>
   {/if}
   <input 
     type="range"
-    {id} 
+    id={id || 'amount-slider'} 
     {min}
     {max}
     {step}

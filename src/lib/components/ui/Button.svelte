@@ -4,7 +4,6 @@
   
   interface Props extends HTMLButtonAttributes {
     variant?: 'primary' | 'secondary';
-    class?: string;
     children?: Snippet;
   }
 
