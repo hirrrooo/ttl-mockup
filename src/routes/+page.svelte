@@ -1,6 +1,7 @@
 <script lang="ts">
   import ColorSwatch from '$lib/components/ColorSwatch.svelte';
   import TypographyScale from '$lib/components/TypographyScale.svelte';
+  import FontWeights from '$lib/components/FontWeights.svelte';
   import Button from '$lib/components/ui/Button.svelte';
   import Input from '$lib/components/ui/Input.svelte';
   import Card from '$lib/components/ui/Card.svelte';
@@ -71,6 +72,7 @@
         <div>
           <h3 class="text-sm font-sans font-bold uppercase tracking-wider text-dusty-olive mb-6 border-b border-khaki-beige/30 pb-2">Typography</h3>
           <TypographyScale />
+          <FontWeights />
         </div>
       </div>
     </section>
@@ -150,4 +152,13 @@
     </section>
 
   </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark-walnut text-paper py-8 mt-24 text-center">
+    <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="font-serif text-sm opacity-80">&copy; 2026 Take The Lead Foundation</p>
+      <p class="font-sans text-xs uppercase tracking-widest text-khaki-beige">Brand Identity Document</p>
+    </div>
+  </footer>
+
 </div>
