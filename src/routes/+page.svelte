@@ -35,16 +35,38 @@
         <!-- Colors -->
         <div>
           <h3 class="text-sm font-sans font-bold uppercase tracking-wider text-dusty-olive mb-6 border-b border-khaki-beige/30 pb-2">Color Palette</h3>
-          <div class="space-y-4">
-            <h4 class="font-sans text-xs font-semibold text-camel uppercase">Primary Browns</h4>
-            <ColorSwatch name="Dark Walnut" hex="#582f0e" class="bg-dark-walnut" />
-            <ColorSwatch name="Saddle Brown" hex="#7f4f24" class="bg-saddle-brown" />
-            <ColorSwatch name="Toffee Brown" hex="#936639" class="bg-toffee-brown" />
+          <div class="space-y-6">
             
-            <h4 class="font-sans text-xs font-semibold text-camel uppercase mt-6">Accents</h4>
-            <ColorSwatch name="Dry Sage" hex="#a4ac86" class="bg-dry-sage" />
-            <ColorSwatch name="Dusty Olive" hex="#656d4a" class="bg-dusty-olive" />
-            <ColorSwatch name="Khaki Beige" hex="#b6ad90" class="bg-khaki-beige" />
+            <div>
+              <h4 class="font-sans text-xs font-semibold text-camel uppercase mb-3">Primary Browns</h4>
+              <div class="space-y-3">
+                <ColorSwatch name="Dark Walnut" hex="#582f0e" class="bg-dark-walnut" />
+                <ColorSwatch name="Saddle Brown" hex="#7f4f24" class="bg-saddle-brown" />
+                <ColorSwatch name="Toffee Brown" hex="#936639" class="bg-toffee-brown" />
+                <ColorSwatch name="Camel" hex="#a68a64" class="bg-camel" />
+              </div>
+            </div>
+            
+            <div>
+              <h4 class="font-sans text-xs font-semibold text-camel uppercase mb-3">Accents / Greens</h4>
+              <div class="space-y-3">
+                <ColorSwatch name="Ebony" hex="#414833" class="bg-ebony" />
+                <ColorSwatch name="Charcoal Brown" hex="#333d29" class="bg-charcoal-brown" />
+                <ColorSwatch name="Dusty Olive" hex="#656d4a" class="bg-dusty-olive" />
+                <ColorSwatch name="Dry Sage" hex="#a4ac86" class="bg-dry-sage" />
+                <ColorSwatch name="Dry Sage Light" hex="#c2c5aa" class="bg-dry-sage-light" />
+              </div>
+            </div>
+
+            <div>
+              <h4 class="font-sans text-xs font-semibold text-camel uppercase mb-3">Neutrals / Backgrounds</h4>
+              <div class="space-y-3">
+                <ColorSwatch name="Khaki Beige" hex="#b6ad90" class="bg-khaki-beige" />
+                <ColorSwatch name="Paper" hex="#f5f2eb" class="bg-paper" />
+                <ColorSwatch name="Parchment" hex="#fdfbf7" class="bg-parchment" />
+              </div>
+            </div>
+
           </div>
         </div>
 
